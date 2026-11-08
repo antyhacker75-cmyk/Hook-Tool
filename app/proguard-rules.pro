@@ -1,0 +1,1 @@
+# Recovered project — minification disabled in build.gradle.kts

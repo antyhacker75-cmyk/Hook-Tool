@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#080D19"
+    android:padding="22dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="22dp"
+            android:paddingBottom="22dp">
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp">
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome back"
+                    android:textColor="#F3F7FF"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:letterSpacing="0.02" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in to continue"
+                    android:textColor="#91A2BC"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingTop="7dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#111C2E"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#45D9E8"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edittext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="Enter your access key"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textColor="#F3F7FF"
+                    android:textColorHint="#71839F"
+                    android:textSize="14sp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:background="#0B1424" />
+
+                <CheckBox
+                    android:id="@+id/rememberKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remember this key on this device"
+                    android:textColor="#AAB8D0"
+                    android:textSize="13sp"
+                    android:buttonTint="#45D9E8"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#07131E"
+                    android:backgroundTint="#45D9E8" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SECURE KEY VERIFICATION"
+                android:textColor="#657994"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.14"
+                android:gravity="center"
+                android:paddingTop="22dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
